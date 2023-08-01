@@ -1,4 +1,4 @@
-package com.maoyou.testseata.order;
+package com.maoyou.testseata.stock;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -9,11 +9,11 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-@MapperScan("com.maoyou.testseata.order.mapper")
-public class TestSeataOrderApplication {
+@MapperScan("com.maoyou.testseata.stock.mapper")
+public class TestSeataStockApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TestSeataOrderApplication.class, args);
+        SpringApplication.run(TestSeataStockApplication.class, args);
     }
 
 }

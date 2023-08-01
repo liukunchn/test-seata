@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.56.20:3306/seata_stock?useUnicode=true&rewriteBatchedStatements=true
+    username: root
+    password: test
+logging:
+  level:
+    com.maoyou.testseata.stock.mapper: debug
+seata:
+  tx-service-group: default_tx_group
+  service:
+    vgroup-mapping:
+      default_tx_group: default
+    grouplist:
+      default: 192.168.56.20:8091
+

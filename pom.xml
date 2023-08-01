@@ -8,5 +8,11 @@
     <artifactId>test-seata</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>test-seata-stock</module>
+        <module>test-seata-pay</module>
+        <module>test-seata-order</module>
+    </modules>
+
 
 </project>
